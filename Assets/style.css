@@ -21,9 +21,12 @@ p{
     
 }
 .one{
-   margin-top: 200px;
+   margin-top: 2git00px;
    text-align: center;
 }
 .photo{
     display: flex;
+}
+.backcolor{
+    background-color:#F8ECE4 ;
 }
