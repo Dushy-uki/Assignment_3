@@ -8,6 +8,7 @@
 }
 p{
     color: aliceblue;
+    
 }
 .navbar{
     display: flex;
@@ -21,7 +22,7 @@ p{
     
 }
 .one{
-   margin-top: 2git00px;
+   margin-top: 200px;
    text-align: center;
 }
 .photo{
@@ -29,4 +30,6 @@ p{
 }
 .backcolor{
     background-color:#F8ECE4 ;
+  
 }
+
