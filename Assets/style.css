@@ -1,0 +1,29 @@
+.bag{
+    background-image: url(./img/carousel-1.jpg);
+    background-size: 1820px 900px; 
+    
+}
+.home{
+    color: rgb(245, 114, 21);
+}
+p{
+    color: aliceblue;
+}
+.navbar{
+    display: flex;
+}
+.title{
+    text-align: center;
+    font-size: xx-large;
+}
+.food{
+    text-align: center;
+    
+}
+.one{
+   margin-top: 350px;
+   text-align: center;
+}
+.photo{
+    display: flex;
+}
