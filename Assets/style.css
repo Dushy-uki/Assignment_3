@@ -8,6 +8,7 @@
 }
 p{
     color: aliceblue;
+    
 }
 .navbar{
     display: flex;
@@ -21,7 +22,7 @@ p{
     
 }
 .one{
-   margin-top: 2git00px;
+   margin-top: 200px;
    text-align: center;
 }
 .photo{
@@ -29,4 +30,24 @@ p{
 }
 .backcolor{
     background-color:#F8ECE4 ;
+  
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: aliceblue;
+    color: black;
+}
+.passion{
+    background-image: url(./img/donate.jpg);
+}
+
+
