@@ -32,4 +32,21 @@ p{
     background-color:#F8ECE4 ;
   
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: aliceblue;
+    color: black;
+}
+.passion{
+    background-image: url(./img/donate.jpg);
+}
 
