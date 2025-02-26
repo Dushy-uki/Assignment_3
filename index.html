@@ -7,34 +7,38 @@
     <title>Home</title>
     <link rel="stylesheet" href="Assets/style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <div class="bag md:opacity-100 bg-teal-950 bg-blend-multiply  bg-blend-overlay  h-200">
         <div>
-            <nav class="navbar grid p-4">
+            <nav class="navbar grid p-4 fixed h-15 w-screen bg-teal-950 bg-blend-multiply  bg-blend-overlay">
                 <img src="./Assets/img/finallogo.png" class="w-20">
-                <p class="home pl-310">Home</p>
-                <p class="pl-6">About</p>
-                <p class="pl-6">Services</p>
-                <p class="pl-6">Menu</p>
-                <div class="dropdown">
-                    <p class="pl-6">Pages</p>
-                    <div class="dropdown-content">
-                        <h1>Contant</h1>
+                <a href="#home" class="home pl-310">Home</p>
+                    <a href="#about" class="pl-6 text-white">About</a>
+                    <a href="#services" class="pl-6 text-white">Services</a>
+                    <a href="#menu" class="pl-6 text-white">Menu</a>
+                    <div class="dropdown">
+                        <p class="pl-6">Pages</p><i class="fa-solid fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="./contact.html" class="text-black">Contact</a>
+                        </div>
                     </div>
-                </div>
-                <div class="navbar">
-                    <button type="button" value="Sign up" class="home border-2 border-brown-500 ... w-24 pl-4"
-                    style="height: fit-content; width: fit-content; display: inline-block;">Sign
-                        up</button>
-                    <div>
-                        <img src="./Assets/img/arrow.png" class="w-8">
+                    <div class="navbar pl-4">
+                        <button type="button" value="Sign up" class="home border-2 border-brown-500 ... w-24 pl-4"
+                            style="height: fit-content; width: fit-content; display: inline-block;">Sign
+                            up<img src="./Assets/img/arrow RIGHT.png" class="w-8 pl-2"
+                                style="display: inline-block;"></button>
+
+
+
                     </div>
-                </div>
             </nav>
         </div><br>
-        <div class="one">
+        <div class="one" id="home">
             <div class="title text-white-500 font-bold">
                 <p class="text-6xl"><strong> From Our Kitchen to Your</strong></p>
                 <p class="text-6xl"><strong>Table , Fresh Every Day</strong></p>
@@ -45,88 +49,272 @@
                 <p>brighten tour day with every bite!</p>
             </div><br>
             <div class="grid justify-items-center">
-                <button class="bg-orange-400 shadow-lg shadow-indigo-500/50 ">Explore More</button>
-
-            </div>
-        </div>
-    </div>
-    <div class="flex m-30 ">
-        <div style="max-width: 40%; ">
-            <img src="./Assets/img/about-1.jpg" class="w-120 h-120 border rounded-bl-2xl ml-10 absolute z-10">
-            <img src="./Assets/img/about-2.jpg"
-                class="w-50 h-50 border rounded-3xl relative z-50 border-8 border-white left transition delay-150 duration-300 hover:scale-110"
-                style="left: 400px; bottom: 50px;">
-        </div>
-        <div style="margin-left: 40%; max-width: 40%;">
-            <button class="bg-orange-100 p-2 border rounded-lg text-orange-600">About Us</button>
-            <h2 class="text-4xl pt-6"><strong> Join us on our journey to celebrate the art of food.</strong></h2>
-            <h2 class="bg-gray-200 my-6 p-4 shadow-xl">You don't have to cook fancy or compilcate masterpieces - just
-                good food fresh ingredients.<br><br><span class="text-orange-600">
-                    Julis Child</span></h2>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eos cum. Non quae perferendis
-                cupiditate neque quidem aperiam autem repellendus. Explicabo nemo, tenetur fugit mollitia qui quo
-                deserunt quis nihil quod illum et fuga, dolore quasi maiores reprehenderit? Asperiores ad corrupti vero
-                aperiam suscipit quasi! Molestiae tenetur at animi quas.</h1><br>
-            <div class="space-x-3">
                 <button
-                    class="bg-orange-500 text-white transition delay-150 duration-300 hover:scale-110 rounded-sm p-2">Learn
-                    More</button>
+                    class="bg-orange-400 shadow-lg shadow-gray-500/50 p-2 transition delay-150 duration-300 hover:scale-110">Explore
+                    More <img src="./Assets/img/arrow RIGHT.png" class="w-8 pl-2"
+                        style="display: inline-block;"></button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--section3-->
+    <section3 id="about">
+        <div class="flex m-30 ">
+            <div style="max-width: 40%; ">
+                <img src="./Assets/img/about-1.jpg" class="w-120 h-120 border rounded-bl-2xl ml-10 absolute z-10">
+                <img src="./Assets/img/about-2.jpg"
+                    class="w-50 h-50 border rounded-3xl relative z-50 border-8 border-white left transition delay-150 duration-300 hover:scale-110"
+                    style="left: 400px; bottom: 50px;">
+            </div>
+            <div style="margin-left: 40%; max-width: 40%;">
+                <button class="bg-orange-100 p-2 border rounded-lg text-orange-600">About Us</button>
+                <h2 class="text-4xl pt-6"><strong> Join us on our journey to celebrate the art of food.</strong></h2>
+                <h2 class="bg-gray-200 my-6 p-4 shadow-xl">You don't have to cook fancy or compilcate masterpieces -
+                    just
+                    good food fresh ingredients.<br><br><span class="text-orange-600">
+                        Julis Child</span></h2>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eos cum. Non quae perferendis
+                    cupiditate neque quidem aperiam autem repellendus. Explicabo nemo, tenetur fugit mollitia qui quo
+                    deserunt quis nihil quod illum et fuga, dolore quasi maiores reprehenderit? Asperiores ad corrupti
+                    vero
+                    aperiam suscipit quasi! Molestiae tenetur at animi quas.</h1><br>
+                <div class="space-x-3">
+                    <button
+                        class="bg-orange-500 text-white transition delay-150 duration-300 hover:scale-110 rounded-sm p-2">Learn
+                        More<img src="./Assets/img/arrow RIGHT.png" class="w-5 ml-2"
+                            style="display: inline-block;"></button>
+                    <button
+                        class="bg-white-500 rounded-sm transition delay-150 duration-300 hover:scale-110 p-2 border border-orange-500 text-orange-500 ">Contact
+                        Us<img src="./Assets/img/arrow.png" class="w-5 ml-2" style="display: inline-block;"></button>
+                </div>
+            </div>
+        </div>
+    </section3>
+
+
+    <!--section4-->
+    <section4 id="menu">
+        <div class="backcolor p-20">
+            <h1 class="text-orange-500 text-center pt-15">Our Speciais</h1>
+            <h1 class="font-bold text-center text-3xl  mt-4">Discover a variety of dishes crafted with care</h1>
+            <div class="grid grid-cols-3 divide-x-2 w-80 ml-170 divide-orange-500 mt-6">
+                <div class="bg-orange-400 text-white text-center">All</div>
+                <div class="border-2 border-orange-500 text-center">Vegitarion</div>
+                <div class="border-2 border-orange-500 text-center">Berages</div>
+            </div>
+            <div class="flex ml-30">
+                <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
+                    <button class="bg-orange-500 ml-28">Rice & Curry</button>
+                    <h3 class="text-center mt-6 text-bold"><b>A Taste in Every Bite</b></h3>
+                    <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem,
+                        placeat
+                        beatae atque minima nobis.</h4>
+                    <div class="cardpic mt-9">
+                        <img src="./Assets/img/courses-1.jpg" class="w-80">
+                    </div>
+                </div>
+                <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
+                    <button class="bg-orange-500 ml-30">Koththu</button>
+                    <h3 class="text-center mt-6 text-bold"><b>Cheesy, and delicious</b></h3>
+                    <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem,
+                        placeat
+                        beatae atque minima nobis.</h4>
+                    <div class="cardpic mt-9">
+                        <img src="./Assets/img/courses-3.jpg" class="w-80">
+                    </div>
+                </div>
+                <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
+                    <button class="bg-orange-500 ml-28">Mango Juice</button>
+                    <h3 class="text-center mt-6 text-bold"><b>Refreshing and natural</b></h3>
+                    <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem,
+                        placeat
+                        beatae atque minima nobis.</h4>
+                    <div class="cardpic mt-9">
+                        <img src="./Assets/img/beverage-1.jpg" class="w-80">
+                    </div>
+                </div>
+                <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
+                    <button class="bg-orange-500 ml-28">Milk Tea</button>
+                    <h3 class="text-center mt-6 text-bold"><b>A warm cup of comfort</b></h3>
+                    <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem,
+                        placeat
+                        beatae atque minima nobis.</h4>
+                    <div class="cardpic mt-9">
+                        <img src="./Assets/img/beverage-2.jpg" class="w-80 h-78">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section4>
+
+
+    <!--section5-->
+    <section5 id="services">
+        <div>
+            <button class="bg-orange-100 mt-9 text-orange-600 ml-220 rounded-lg">What We Do</button>
+            <h1 class="text-3xl mt-4 text-center"><b>Learn More What We Do -</b></h1>
+            <h1 class="text-3xl text-center"><b>Our Services</b></h1>
+        </div>
+        <div class="flex mt-20 ml-60 w-350">
+
+            <div class="w-90 h-140 shadow-2xl ml-15 bg-white">
+                <img src="./Assets/img/icon-1.png" class="w-50 ml-18 mt-14 h-50">
+                <h1 class="text-center text-xl mt-9"><b>Fresh ingredients</b></h1>
+                <h1 class="mt-9 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed
+                    aliquam
+                    quisquam cupiditate magni blanditiis molestias temporibus nam neque error!</h1>
                 <button
-                    class="bg-white-500 rounded-sm transition delay-150 duration-300 hover:scale-110 p-2 border border-orange-500 text-orange-500 ">Contact
-                    Us</button>
+                    class="p-2 bg-white text-orange-500 ml-33 mt-9 border-2 border-orange-500 w-27 rounded-lg transition delay-150 duration-300 hover:scale-110"
+                    style="height: fit-content; width: fit-content; display: inline-block;">Learn
+                    More<img src="./Assets/img/arrow.png" class="w-5 ml-2" style="display: inline-block;"></button>
+            </div>
+            <div class="w-90 h-140 shadow-2xl ml-15 bg-white">
+
+                <img src="./Assets/img/icon-2.png" class="w-50 ml-18 mt-14 h-50">
+                <h1 class="text-center text-xl mt-9"><b>Quality & Taste</b></h1>
+                <h1 class="mt-9 text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed
+                    aliquam
+                    quisquam cupiditate magni blanditiis molestias temporibus nam neque error!</h1>
+                <button
+                    class="p-2 bg-white text-orange-500 ml-33 mt-9 border-2 border-orange-500 w-27 rounded-lg transition delay-150 duration-300 hover:scale-110"
+                    style="height: fit-content; width: fit-content; display: inline-block;">Learn
+                    More<img src="./Assets/img/arrow.png" class="w-5 ml-2" style="display: inline-block;"></button>
+            </div>
+            <div class="w-90 h-140 shadow-2xl ml-15 bg-white">
+                <img src="./Assets/img/icon-3.png" class="w-50 ml-18 mt-14 h-50">
+                <h1 class="text-center text-xl mt-9"><b>Customizable Options</b></h1>
+                <h1 class="mt-9 text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed
+                    aliquam
+                    quisquam cupiditate magni blanditiis molestias temporibus nam neque error!</h1>
+                <button
+                    class="p-2 bg-white text-orange-500 ml-33 mt-9 border-2 border-orange-500 w-27 rounded-lg transition delay-150 duration-300 hover:scale-110"
+                    style="height: fit-content; width: fit-content; display: inline-block;">Learn
+                    More<img src="./Assets/img/arrow.png" class="w-5 ml-2" style="display: inline-block;"></button>
             </div>
         </div>
-    </div>
+    </section5>
 
-    <div class="backcolor">
-        <h1 class="text-orange-500 text-center pt-15">Our Speciais</h1>
-        <h1 class="font-bold text-center text-3xl  mt-4">Discover a variety of dishes crafted with care</h1>
-        <div class="grid grid-cols-3 divide-x-2 w-80 ml-190 divide-orange-500 mt-6">
-            <div class="bg-orange-400 text-white text-center">All</div>
-            <div class="border-2 border-orange-500 text-center">Vegitarion</div>
-            <div class="border-2 border-orange-500 text-center">Berages</div>
+    <!--section6-->
+    <section6>
+        <div style="background-image: url(./Assets/img/donate.jpg); background-size: 1700px 400px;"
+            class="md:opacity-100 bg-teal-950 bg-blend-multiply mt-20 bg-blend-overlay md:opacity-100 h-110 w-screen">
+            <h1 class="text-white  text-3xl pl-50 pt-20"><b>A Journey of Flavors, Crafted with Passion</b></h1>
+            <h1 class="pt-20 text-white pl-50 text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia culpa nulla cum iure tempora velit quaerat. Necessitatibus, cupiditate ut laborum earum odit,
+                voluptas cumque blanditiis <br>eveniet modi quo amet tempora et rem fugit. Sit adipisci facilis, quo
+                repudiandae repellat sapiente. Et blanditiis nisi ratione delectus.</h1>
+            <button
+                class="bg-orange-100 text-orange-400 rounded-2xl ml-50 transition delay-150 duration-300 hover:scale-110 mt-20 p-2">Order
+                Now</button>
         </div>
-        <div class="flex ml-40">
-            <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
-                <button class="bg-orange-500 ml-28">Rice & Curry</button>
-                <h3 class="text-center mt-6 text-bold"><b>A Taste in Every Bite</b></h3>
-                <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem, placeat
-                    beatae atque minima nobis.</h4>
-                <div class="cardpic mt-9">
-                    <img src="./Assets/img/courses-1.jpg" class="w-80">
-                </div>
-            </div>
-            <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
-                <button class="bg-orange-500 ml-30">Koththu</button>
-                <h3 class="text-center mt-6 text-bold"><b>Cheesy, and delicious</b></h3>
-                <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem, placeat
-                    beatae atque minima nobis.</h4>
-                <div class="cardpic mt-9">
-                    <img src="./Assets/img/courses-3.jpg" class="w-80">
-                </div>
-            </div>
-            <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
-                <button class="bg-orange-500 ml-28">Mango Juice</button>
-                <h3 class="text-center mt-6 text-bold"><b>Refreshing and natural</b></h3>
-                <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem, placeat
-                    beatae atque minima nobis.</h4>
-                <div class="cardpic mt-9">
-                    <img src="./Assets/img/beverage-1.jpg" class="w-80">
-                </div>
-            </div>
-            <div class="card w-80 mt-20 ml-10 border-4 border-white border-t-orange-500 bg-white">
-                <button class="bg-orange-500 ml-28">Milk Tea</button>
-                <h3 class="text-center mt-6 text-bold"><b>A warm cuo of comfort</b></h3>
-                <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem, placeat
-                    beatae atque minima nobis.</h4>
-                <div class="cardpic mt-9">
-                    <img src="./Assets/img/beverage-2.jpg" class="w-80 h-78">
-                </div>
-            </div>
+    </section6>
 
+    <!--section7-->
+    <section7>
+        <div>
+            <button class="bg-orange-100 text-orange-400 rounded-lg mt-20 ml-200">Team Members</button>
+            <h1 class="text-3xl font-bold ml-180 mt-8">Let's Meet Our Team</h1>
         </div>
+        <div class="flex space-x-10 ml-60">
+            <div class="card mt-14 transition delay-150 duration-300 hover:scale-110" style="width: 300px;">
+                <img src="./Assets/img/team-1.jpg" class="card-img-top">
+                <div class="bg-gray-100">
+                    <h3 class="grid justify-items-center 3"><b>Velvet Dawn</b></h3>
+                    <h3 class="text-orange-400 grid justify-items-center 3">Executive Chef</h3>
+                </div>
+            </div>
 
-    </div>
+            <div class="card mt-14 transition delay-150 duration-300 hover:scale-110" style="width: 300px;">
+                <img src="./Assets/img/team-2.jpg" class="card-img-top">
+                <div class="bg-gray-100">
+                    <h3 class="grid justify-items-center 3"><b>Crimson Vale</b></h3>
+                    <h3 class="text-orange-400 grid justify-items-center 3">Sous Chef</h3>
+                </div>
+            </div>
+
+            <div class="card mt-14 transition delay-150 duration-300 hover:scale-110" style="width: 300px;">
+                <img src="./Assets/img/team-3.jpg" class="card-img-top">
+                <div class="bg-gray-100">
+                    <h3 class="grid justify-items-center 3"><b>Nova Drift</b></h3>
+                    <h3 class="text-orange-400 grid justify-items-center 3">Sous Chef</h3>
+                </div>
+            </div>
+
+            <div class="card mt-14 transition delay-150 duration-300 hover:scale-110" style="width: 300px;">
+                <img src="./Assets/img/team-4.jpg" class="card-img-top">
+                <div class="bg-gray-100">
+                    <h3 class="grid justify-items-center 3"><b>Blaze Storm</b></h3>
+                    <h3 class="text-orange-400 grid justify-items-center 3">Junior Chef</h3>
+
+                </div>
+            </div>
+        </div>
+    </section7>
+
+    <!--section8-->
+    <section8>
+        <div class="corosual mt-9 w-screen h-140">
+            <button class="bg-orange-100 rounded-lg text-orange-600 ml-200 mt-6">Feedback</button>
+            <h1 class="font-bold text-3xl ml-170 pt-4">Trusted By Thousands Of<br><span class="ml-30">People</span></h1>
+               <img src="./Assets/img/testimonial-1.jpg" class="p-2 rounded-full ml-198 mt-18">
+               <img src="./Assets/img/back.png" class="w-10 ml-55">
+               <img src="./Assets/img/next.png" class="w-10 ml-350 relative bottom-10">
+            <h1 class="text-black ml-95 mt-8">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores autem
+                quo ipsum pariatur quibusdam quam repellat eaque? Soluta" <br><span class="ml-100">dolorum
+                    repellat</span></h1>
+        </div>
+    </section8>
+
+    <!--section9-->
+    <section9>
+        <div class="flex pt-30 bg-indigo-950 text-white w-screen">
+            <div class="w-100 pl-45">
+                <h1 class="font-bold text-3xl ml-10"><span class="text-orange-600">Home</span>Bites</h1>
+                <h1 class="pt-6 w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cum aliquid
+                    veritatis molestiae a ducimus officia magnam deleniti, assumenda magni, reprehenderit dicta ullam
+                    veniam corrupti. Dignissimos, quae corrupti? Fugit repudiandae ratione libero expedita cumque
+                    adipisci veritatis, asperiores reprehenderit porro quo ipsa alias, ipsum culpa odio ea non!
+                    Excepturi temporibus at magni, aperi.</h1>
+                <div class="flex w-8 pt-6">
+                    <img src="./Assets/img/twitter-sign.png">
+                    <img src="./Assets/img/facebook.png">
+                    <img src="./Assets/img/video.png">
+                    <img src="./Assets/img/linkedin-logo.png">
+                </div>
+            </div>
+            <div class="w-100 pl-50">
+                <h1 class="text-xl font-bold">Address</h1>
+
+                <h4><i style="font-size:24px" class="fa mt-6">&#xf041;</i>123 Street, Jaffna, Srilanka</h4>
+
+                <h4><i style="font-size:24px" class="fa mt-6">&#xf095;</i>
+                    +0771234567</h4>
+                <h4><i style="font-size:24px" class="fa mt-6">&#xf0e0;</i>info@fromcake.com</h4>
+            </div>
+            <div class="w-100 pl-50">
+                <h1 class="text-xl font-bold">Quick Links</h1>
+                <div class="list-inside">
+                    <li class="pt-6">About us</li>
+                    <li>Contact us</li>
+                    <li>Our Services</li>
+                    <li>Terms & Conditions</li>
+                    <li>Support</li>
+                </div>
+            </div>
+            <div class="w-100 pl-40">
+                <h1 class="text-xl font-bold ">Newsietter</h1>
+                <h3 class="pt-4">Where every feeing like Home</h3>
+                <input type="text" value="Your email" class="border-2 p-2">
+                <button class="bg-orange-500 text-white mt-3 relative right-10 bottom-12 ml-50 rounded-md">Signup</button>
+            </div>
+        </div>
+        <footer class="bg-indigo-950 text-white w-screen pl-40 p-6"><span class="font-bold">Home Bites</span> All right
+            <span class="ml-280">organized by uki cohourt 11</span></footer>
+    </section9>
+
+
 </body>
 
 </html>
