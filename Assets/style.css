@@ -12,6 +12,7 @@ p{
 }
 .navbar{
     display: flex;
+    background-image: url(./img/carousel-1.jpg);
 }
 .title{
     text-align: center;
@@ -30,6 +31,7 @@ p{
 }
 .backcolor{
     background-color:#F8ECE4 ;
+
   
 }
 .dropdown{
@@ -57,4 +59,7 @@ p{
     margin-top: 80px;
    text-align: center;
 }
-
+.corosual{
+    background-color:#F8ECE4 ;
+    padding: auto;  
+}
